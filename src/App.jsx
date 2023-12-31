@@ -7,14 +7,20 @@ function App() {
       <h1>Tomas Morinigo</h1>
       <div className='main__center'>
         <h2>Work in progress</h2>
-        <p>Our exciting new website will launch soon. <br />
-          Come back and check it out
+        <p>Soon my personal portfolio will be available! <br />
+         Thank you for visiting my website
         </p>
 
         <ul className='social-media'>
-          <li>Linkedin</li>
-          <li>Github</li>
-          <li>Mail</li>
+          <li><a href="https://github.com/tomimorinigo">
+              <i class="fa-brands fa-github"></i>
+            </a></li>
+          <li><a href="https://www.linkedin.com/in/tomas-morinigo-3508a9204/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+          <li><a href="mailto:morinigotomas1@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a></li>
         </ul>
 
       </div>

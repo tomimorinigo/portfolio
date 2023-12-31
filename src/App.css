@@ -7,7 +7,10 @@
 #root {
   width: 100%;
   text-align: center;
-  height: 75vh;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main{
@@ -18,6 +21,7 @@
 .main h1{
   font-size: 26px;
   user-select: none;
+  color: #1e90ff;
 }
 
 .main__center{
@@ -37,13 +41,74 @@
 }
 
 .social-media{
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
+  user-select: none;
 }
 
 .social-media li{
-  margin: 0 18px;
+  margin: 0 23px;
+}
+
+.social-media li a{
+  color: #1e90ff;
+  text-decoration: none;
+
+}
+
+.social-media li a i{
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px){
+  .main{
+    width: 90%;
+  }
+
+  .main h1{
+    margin-bottom: 25px;
+  }
+
+  .main__center h2{
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 25px;
+  }
+
+  .main__center p{
+    font-size: 18px;
+  }
+
+  .social-media{
+    margin-top: 50px;
+  }
+
+  .social-media li{
+    margin: 0 15px;
+  }
+
+  .social-media li a i{
+    font-size: 40px;
+    margin: 0 10px;
+  }
+  
+}
+
+@media screen and (max-width: 320px){
+  .main__center h2{
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  .main__center p{
+    font-size: 16px;
+  }
+
+  .social-media li a i{
+    font-size: 32px;
+    margin: 0 5px;
+  }
 }
