@@ -7,7 +7,7 @@
 #root {
   width: 100%;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@
 }
 
 .social-media{
-  margin-top: 30px;
+  margin-top: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,12 +50,17 @@
 }
 
 .social-media li{
-  margin: 0 23px;
+  margin: 0 25px;
 }
 
 .social-media li a{
   color: #1e90ff;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-media li a:hover{
+  color: #fff;
 
 }
 
