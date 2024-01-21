@@ -1,3 +1,60 @@
+/* Clases universales */
+
+.text-hover{
+  color: #1e90ff;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0 0 0 0 #1e90ff;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.text-hover:hover{
+  box-shadow: inset 600px 0 0 0 #54b3d6;
+  color: white;
+  cursor: pointer ;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h3{
+  color: #1e90ff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  display: inline-block;
+  padding: 3px 0;
+  position: relative;
+  margin-right: 4%;
+  font-size: 24px;
+}
+
+.title h3::after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #20a4f3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.title h3:hover::after{
+  width: 100%; 
+  left: 0; 
+}
+
+.title hr{
+  width: 80%;
+}
+
+/* --------------- */
+
 *{
   margin: 0;
   padding: 0;
@@ -8,6 +65,8 @@
   width: 100%;
   height: 200vh;
 }
+
+/* ------ HEADER ------ */
 
 .header{
   position: sticky;
@@ -120,8 +179,9 @@
   background: #13608d;
 }
 
+/* ------ MAIN SECTION ------ */
+
 .main{
-  position: absolute;
   width: 100%;
   height: 95vh;
   background-color: #011e48;
@@ -154,7 +214,7 @@
 }
 
 .main-section h2{
-  font-size: 50px;
+  font-size: 45px;
   text-align: left;
   color: #ddd;
   font-weight: 400;
@@ -173,7 +233,7 @@
   width: 60px;
   height: 78px;
   position: absolute;
-  bottom: 75px;
+  bottom: 18px;
 }
 
 .arrows path {
@@ -215,6 +275,8 @@
   -webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
+/* ------ SOCIAL ASIDE ------ */
+
 .aside-social{
   position: fixed;
   bottom: 0;
@@ -226,15 +288,47 @@
 }
 
 .aside-social a{
-  margin: 4px 0;
-  text-decoration: none;
-  color: #fff;
-  transition: color 300ms;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 45px;
   font-size: 30px;
+  margin: 10px 0;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
 }
 
-.aside-social a:hover{
-  color: #20a4f3;
+.aside-social a i{
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.aside-social a:hover i{
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.aside-social a::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #54b3d6;
+  transition: .5s;
+  z-index: 2;
+}
+
+.aside-social a:hover:before {
+  top: 0;
 }
 
 .white-line{
@@ -242,4 +336,108 @@
   border: 0;
   border-left: 1px solid #fff;
   height: 120px;
+}
+
+/* ------ ABOUT ME ------ */
+
+.about{
+  width: 910px;
+  margin: auto;
+  margin-top: 7%;
+  height: 75vh;
+}
+
+.about-content{
+  margin-top: 35px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content p{
+  font-size: 20px;
+  color: #ddd;
+}
+
+.about-content p span{
+  color: #1e90ff;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0 0 0 0 #1e90ff;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.about-content p span:hover{
+  box-shadow: inset 300px 0 0 0 #54b3d6;
+  color: white;
+  cursor: pointer ;
+}
+
+.img-wrapper{
+  position: relative;
+  margin-left: 30px;
+}
+
+.img-wrapper:hover .filter{
+  opacity: 0;
+}
+
+.filter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 144, 245, 0.3);
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.img-wrapper img{
+  display: block;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.img-wrapper:hover img{
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+.about-content img:hover{
+  filter:  sepia(0%);
+}
+
+/* SKILLS */
+
+.skills{
+  width: 950px;
+  margin: auto;
+  height: 75vh;
+}
+
+.skills-content{
+  padding: 15px;
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill{
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.skill img{
+  width: 90px;
+  filter: grayscale(100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.skill:hover img{
+  filter: grayscale(0%);
 }
