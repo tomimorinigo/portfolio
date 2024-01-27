@@ -1,9 +1,9 @@
 /* Clases universales */
 
 .text-hover{
-  color: #1e90ff;
+  color: var(--primary-color);
   transition: all 0.2s ease-in-out;
-  box-shadow: inset 0 0 0 0 #1e90ff;
+  box-shadow: inset 0 0 0 0 var(--primary-color);
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .title h3{
-  color: #1e90ff;
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   
@@ -53,7 +53,23 @@
   width: 80%;
 }
 
+@media screen and (max-width: 1280px){
+  .title h3{
+    font-size: 20px;
+  }
+}
+
 /* --------------- */
+
+:root{
+  --primary-color: #1e90ff;
+  --secondary-color: #54b3d6;
+  --tertiary-color: #20a4f3;
+  --quaternary-color: #13608d;
+  --background-color: #011e48;
+  --text-color: #ddd;
+
+}
 
 *{
   margin: 0;
@@ -202,13 +218,13 @@
 .main-section p{
   font-size: 42px;
   text-align: left;
-  color: #ddd;
+  color: var(--text-color);
   font-weight: 400;
 }
 
 .main-section h1{
   font-size: 90px;
-  color: #1e90ff;
+  color: var(--primary-color);
   text-align: left;
   font-weight: 600;
 }
@@ -216,12 +232,12 @@
 .main-section h2{
   font-size: 45px;
   text-align: left;
-  color: #ddd;
+  color: var(--text-color);
   font-weight: 400;
 }
 
 .main-section h2 span{
-  color: #1e90ff;
+  color: var(--primary-color);
 }
 
 .main__center p{
@@ -237,7 +253,7 @@
 }
 
 .arrows path {
-  stroke: #1e90ff;
+  stroke: var(--primary-color);
   fill: transparent;
   stroke-width: 2px;  
   animation: arrow 2s infinite;
@@ -246,18 +262,18 @@
 
 @keyframes arrow
 {
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
+@-webkit-keyframes arrow
 {
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
 }
 
 .arrows path.a1 {
@@ -275,12 +291,47 @@
   -webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
+@media screen and (max-width: 950px){
+  .main-section{
+    width: 90%;
+  }
+  .main-section p{
+    font-size: 36px;
+  }
+  .main-section h1{
+    font-size: 80px;
+  }
+  .main-section h2{
+    font-size: 40px;
+  }
+  .main__center p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 712px){
+  .main-section{
+    width: 90%;
+  }
+  .main-section p{
+    font-size: 32px;
+  }
+  .main-section h1{
+    font-size: 70px;
+  }
+  .main-section h2{
+    font-size: 36px;
+  }
+  .main__center p{
+    font-size: 18px;
+  }
+}
 /* ------ SOCIAL ASIDE ------ */
 
 .aside-social{
   position: fixed;
   bottom: 0;
-  left: 100px;
+  left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -338,13 +389,27 @@
   height: 120px;
 }
 
+@media screen and (max-width: 1280px){
+  .aside-social a{
+    width: 42px;
+    height: 42px;
+    font-size: 27px;
+    line-height: 40px;
+  }
+  .white-line{
+    height: 80px;
+  }
+} 
+@media screen and (max-width: 1152px){
+
+}
+
 /* ------ ABOUT ME ------ */
 
 .about{
   width: 910px;
   margin: auto;
   margin-top: 7%;
-  height: 75vh;
 }
 
 .about-content{
@@ -357,13 +422,13 @@
 
 .about-content p{
   font-size: 20px;
-  color: #ddd;
+  color: var(--text-color);
 }
 
 .about-content p span{
-  color: #1e90ff;
+  color: var(--primary-color);
   transition: all 0.2s ease-in-out;
-  box-shadow: inset 0 0 0 0 #1e90ff;
+  box-shadow: inset 0 0 0 0 var(--primary-color);
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -409,19 +474,33 @@
   filter:  sepia(0%);
 }
 
+@media screen and (max-width: 1280px){
+  .about{
+    width: 75%;
+    padding: 30px;
+  }
+  .about-content p{
+    font-size: 18px;
+  }
+  .img-wrapper img{
+    width: 300px;
+  }
+}
+
 /* SKILLS */
 
 .skills{
   width: 950px;
   margin: auto;
-  height: 75vh;
+  margin-top: 9%;
 }
 
 .skills-content{
   padding: 15px;
-  margin-top: 35px;
+  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: center;
   gap: 20px;
 }
 
@@ -440,4 +519,27 @@
 
 .skill:hover img{
   filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.skill p{
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1280px){
+  .skills{
+    width: 75%;
+    padding: 30px;
+  }
+  .skills-content{
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  }
+  .skills-content{
+    margin-top: 20px;
+  }
+  .skill img{
+    width: 80px;
+  }
 }

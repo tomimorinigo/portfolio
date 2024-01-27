@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from 'react'
 
 function App() {
 
+  const main = useRef(null);
   const about = useRef(null);
   const skills = useRef(null);
 
@@ -52,7 +53,7 @@ function App() {
     <>
       <header className='header' style={headerStyle}>
         <div className='logo'>
-          <a href="/">
+          <a href="#" onClick={handleClick(main)}>
             <img src="logo-3.png" alt="Tomas Morinigo logo" />
           </a>
         </div>
@@ -67,7 +68,7 @@ function App() {
         </div>
       </header>
 
-      <main className="main">
+      <main className="main" id="main" ref={main}>
         <section className='main-section'>
           <p>Hi, I&apos;m</p>
           <h1>Tomas Morinigo</h1>
