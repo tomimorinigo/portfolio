@@ -1,0 +1,109 @@
+/* ------ HEADER ------ */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: #011e48;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+  box-shadow: 0px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0px 6.7px 5.3px rgba(0, 0, 0, 0.028), 0px 12.5px 10px rgba(0, 0, 0, 0.035),
+    0px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0px 41.8px 33.4px rgba(0, 0, 0, 0.05), 0px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.logo img {
+  width: 60px;
+  transition: all 0.2s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.15);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 300ms;
+}
+
+.nav ul li a:hover {
+  color: #20a4f3;
+}
+
+#resume {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.35em 1.1em;
+  border: #20a4f3 solid 0.15em;
+  border-radius: 0.25em;
+  color: #20a4f3;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+#resume:hover {
+  color: #fff;
+}
+
+#resume:active {
+  border-color: #13608d;
+}
+
+#resume::after,
+#resume::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: #20a4f3;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+#resume span {
+  z-index: 1;
+}
+
+#resume::before {
+  left: 0;
+  transform: translateX(-9em);
+}
+
+#resume::after {
+  right: 0;
+  transform: translateX(9em);
+}
+
+#resume:hover:before {
+  transform: translateX(-1em);
+}
+
+#resume:hover:after {
+  transform: translateX(1em);
+}
+
+#resume:active:before,
+#resume:active:after {
+  background: #13608d;
+}

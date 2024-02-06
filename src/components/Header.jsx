@@ -1,5 +1,7 @@
-// eslint-disable-next-line react/prop-types
-function Header({ handleClick, scrolling, main, about, skills }) {
+/* eslint-disable react/prop-types */
+import '../assets/styles/Header.css';
+
+function Header({ handleClick, scrolling, main, about, skills, contact }) {
   const headerStyle = {
     transform: scrolling ? "translateY(-100%)" : "translateY(0)",
     transition: "transform 0.3s ease-in-out",
@@ -28,7 +30,7 @@ function Header({ handleClick, scrolling, main, about, skills }) {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a onClick={handleClick(contact)} href="#contact">Contact</a>
           </li>
           <li>
             <a href="#" id="resume">

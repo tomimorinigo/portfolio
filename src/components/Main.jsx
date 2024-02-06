@@ -1,3 +1,5 @@
+import '../assets/styles/Main.css';
+
 // eslint-disable-next-line react/prop-types
 function Main({ main, about, handleClick }) {
   return (

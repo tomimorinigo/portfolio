@@ -1,4 +1,6 @@
-// eslint-disable-next-line react/prop-types
+/* eslint-disable react/prop-types */
+import '../assets/styles/AboutSection.css';
+
 function AboutSection({ about }) {
   return (
     <section className="about" id="about" ref={about}>

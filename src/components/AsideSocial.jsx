@@ -1,3 +1,5 @@
+import '../assets/styles/AsideSocial.css';
+
 function AsideSocial() {
   return (
     <aside className="aside-social">

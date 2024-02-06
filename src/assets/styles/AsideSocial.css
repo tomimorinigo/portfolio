@@ -1,0 +1,75 @@
+/* ------ SOCIAL ASIDE ------ */
+
+.aside-social {
+  position: fixed;
+  bottom: 0;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside-social a {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  margin: 10px 0;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-social a img {
+  position: relative;
+  width: 29px;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.aside-social a:hover img {
+  transform: rotateY(360deg);
+  filter: invert(100%);
+}
+
+.aside-social a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #54b3d6;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.aside-social a:hover:before {
+  top: 0;
+}
+
+.white-line {
+  margin-top: 10px;
+  border: 0;
+  border-left: 1px solid #fff;
+  height: 120px;
+}
+
+@media screen and (max-width: 1280px) {
+  .aside-social a {
+    width: 42px;
+    height: 42px;
+    font-size: 27px;
+    line-height: 40px;
+  }
+  .white-line {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 1152px) {
+}
