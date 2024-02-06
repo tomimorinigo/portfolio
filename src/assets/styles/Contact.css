@@ -8,3 +8,18 @@
 .contact-title hr {
     width: 70%;
 }
+
+.contact-content{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-contact-side{
+    width: 30%;
+    padding: 10px;
+}
