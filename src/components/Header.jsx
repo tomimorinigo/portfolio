@@ -7,6 +7,10 @@ function Header({ handleClick, scrolling, main, about, skills, contact }) {
     transition: "transform 0.3s ease-in-out",
   };
 
+  const openPDF = () => {
+    window.open('/me/cv.pdf', '_blank');
+  };
+
   return (
     <header className="header" style={headerStyle}>
       <div className="logo">
@@ -33,9 +37,9 @@ function Header({ handleClick, scrolling, main, about, skills, contact }) {
             <a onClick={handleClick(contact)} href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#" id="resume">
+            <button className='special-button' onClick={openPDF}>
               <span>Resume</span>
-            </a>
+            </button>
           </li>
         </ul>
       </div>

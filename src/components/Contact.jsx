@@ -14,6 +14,7 @@ function Contact({ contact }) {
             I&apos;m looking for my first work experience, with the aim of
             growing professionally and personally.
           </p>
+          <br />
           <p>
             Feel free to contact me if you have any questions or if you want to
             work with me.
@@ -21,39 +22,28 @@ function Contact({ contact }) {
         </div>
         <div className="contact-form">
           <form action="https://formspree.io/" method="POST">
-            <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                required
-                placeholder="Enter your name"
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="Enter email address"
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="text"
-                name="subject"
-                required
-                placeholder="Subject"
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                name="message"
-                id="message"
-                required
-                placeholder="Write me a message"
-              />
-            </div>
-            <button type="submit">Contact me</button>
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Enter email address"
+            />
+            <input type="text" name="subject" required placeholder="Subject" />
+            <textarea
+              name="message"
+              id="message"
+              required
+              placeholder="Write me a message"
+            />
+            <button type="submit" className="special-button">
+              <span>Contact me</span>
+            </button>
           </form>
         </div>
       </div>

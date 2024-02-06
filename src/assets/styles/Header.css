@@ -1,5 +1,4 @@
 /* ------ HEADER ------ */
-
 .header {
   position: sticky;
   top: 0;
@@ -46,64 +45,8 @@
   color: #20a4f3;
 }
 
-#resume {
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 0.35em 1.1em;
-  border: #20a4f3 solid 0.15em;
-  border-radius: 0.25em;
-  color: #20a4f3;
-  font-weight: 600;
-  cursor: pointer;
-  overflow: hidden;
-  transition: border 300ms, color 300ms;
-  user-select: none;
-}
-
-#resume:hover {
-  color: #fff;
-}
-
-#resume:active {
-  border-color: #13608d;
-}
-
-#resume::after,
-#resume::before {
-  content: "";
-  position: absolute;
-  width: 9em;
-  aspect-ratio: 1;
-  background: #20a4f3;
-  opacity: 50%;
-  border-radius: 50%;
-  transition: transform 500ms, background 300ms;
-}
-
-#resume span {
-  z-index: 1;
-}
-
-#resume::before {
-  left: 0;
-  transform: translateX(-9em);
-}
-
-#resume::after {
-  right: 0;
-  transform: translateX(9em);
-}
-
-#resume:hover:before {
-  transform: translateX(-1em);
-}
-
-#resume:hover:after {
-  transform: translateX(1em);
-}
-
-#resume:active:before,
-#resume:active:after {
-  background: #13608d;
+.nav ul li button{
+  background: transparent;
+  font-size: 16px;
+  padding: 8px 18px;
 }
