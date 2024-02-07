@@ -2,7 +2,7 @@
   width: 920px;
   margin: auto;
   margin-top: 7%;
-  height: 85vh;
+  height: 70vh;
 }
 
 .contact-title hr {
@@ -26,6 +26,14 @@
 .left-contact-side p {
   font-size: 22px;
   font-weight: 500;
+}
+
+.left-contact-side .social{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.5s ease-in-out;
 }
 
 .contact-form {

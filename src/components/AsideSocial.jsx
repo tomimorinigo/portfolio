@@ -3,7 +3,7 @@ import '../assets/styles/AsideSocial.css';
 
 function AsideSocial({scrollState}) {
   return (
-    <aside className={scrollState ? 'contact-social' : 'aside-social'}>
+    <aside className={scrollState ? 'no-show-aside' : 'aside-social'}>
       <a className='social-icon' href="https://github.com/tomimorinigo" target='_blank' rel='noreferrer'>
         <img src="/media/github.png" alt="GitHub Profile" />
       </a>

@@ -19,6 +19,27 @@ function Contact({ contact }) {
             Feel free to contact me if you have any questions or if you want to
             work with me.
           </p>
+          <div className="social">
+            <a
+              className="social-icon"
+              href="https://github.com/tomimorinigo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/media/github.png" alt="GitHub Profile" />
+            </a>
+            <a
+              className="social-icon"
+              href="https://www.linkedin.com/in/tomas-morinigo-3508a9204/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/media/linkedin.png" alt="Linkedin Profile" />
+            </a>
+            <a className="social-icon" href="mailto:morinigotomas1@gmail.com">
+              <img src="/media/email.png" alt="GitHub Profile" />
+            </a>
+          </div>
         </div>
         <div className="contact-form">
           <form action="https://formspree.io/" method="POST">
