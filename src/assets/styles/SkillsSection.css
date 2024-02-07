@@ -46,12 +46,27 @@
     padding: 30px;
   }
   .skills-content {
-    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
   .skills-content {
     margin-top: 20px;
   }
   .skill img {
-    width: 80px;
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .skills {
+    width: 100%;
+  }
+  .skills-content {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+  .skill img {
+    width: 85px;
+  }
+  .skill p {
+    font-size: 16px;
   }
 }

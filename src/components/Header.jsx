@@ -1,7 +1,16 @@
 /* eslint-disable react/prop-types */
+import { useState } from 'react';
 import '../assets/styles/Header.css';
 
 function Header({ handleClick, scrolling, main, about, skills, contact }) {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+
   const headerStyle = {
     transform: scrolling ? "translateY(-100%)" : "translateY(0)",
     transition: "transform 0.3s ease-in-out",
@@ -19,7 +28,7 @@ function Header({ handleClick, scrolling, main, about, skills, contact }) {
         </a>
       </div>
       <div className="nav">
-        <ul>
+        <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
           <li>
             <a onClick={handleClick(about)} href="#">
               About
@@ -42,6 +51,9 @@ function Header({ handleClick, scrolling, main, about, skills, contact }) {
             </button>
           </li>
         </ul>
+        <button className='menu-toggle' onClick={toggleMenu}>
+        <img src="/media/menu.png" alt="" />
+        </button>
       </div>
     </header>
   );
