@@ -7,6 +7,7 @@ import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ProjectsSection from "./components/ProjectsSection";
 import { handleClickScroll, useScroll } from "./scripts/scroll";
 import { useIntersectionObserver } from "./scripts/useIntersectionObserver";
 
@@ -14,6 +15,7 @@ function App() {
   const mainRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
+  const projectRef = useRef(null);
   const contactRef = useRef(null);
 
   const { scrolling } = useScroll();
@@ -27,6 +29,7 @@ function App() {
         main={mainRef}
         about={aboutRef}
         skills={skillsRef}
+        projects={projectRef}
         contact={contactRef}
       />
 
@@ -37,6 +40,8 @@ function App() {
       <AboutSection about={aboutRef} />
 
       <SkillsSection skills={skillsRef} />
+
+      <ProjectsSection project={projectRef} />
 
       <Contact contact={contactRef} />
 

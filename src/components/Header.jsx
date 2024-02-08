@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import '../assets/styles/Header.css';
 
-function Header({ handleClick, scrolling, main, about, skills, contact }) {
+function Header({ handleClick, scrolling, main, about, skills, projects , contact }) {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -40,7 +40,7 @@ function Header({ handleClick, scrolling, main, about, skills, contact }) {
             </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a onClick={handleClick(projects)} href="#">Projects</a>
           </li>
           <li>
             <a onClick={handleClick(contact)} href="#contact">Contact</a>

@@ -1,0 +1,91 @@
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+.left-direction {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
+.right-direction {
+  flex-direction: row;
+  text-align: start;
+}
+
+.side-content {
+  padding: 10px;
+  width: 50%;
+  z-index: 15;
+}
+
+.side-content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.side-content p {
+  width: 130%;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background: var(--quaternary-color);
+  padding: 25px;
+}
+
+.left-direction .side-content p {
+  position: relative;
+  left: -30%;
+}
+
+.technologies-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.left-direction .technologies-list {
+  justify-content: flex-end;
+}
+
+.technologies-list span{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.left-direction .links {
+  justify-content: flex-end;
+}
+
+.links a{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.links a img{
+    width: 30px;
+    margin-right: 5px;
+    filter: invert(1);
+}
+
+.image-wrapper img {
+  width: 450px;
+}
