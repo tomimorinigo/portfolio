@@ -42,7 +42,7 @@ function Contact({ contact }) {
           </div>
         </div>
         <div className="contact-form">
-          <form action="https://formspree.io/" method="POST">
+          <form action="https://formsubmit.co/morinigotomas1@gmail.com" method="POST">
             <input
               type="text"
               name="name"
@@ -65,6 +65,8 @@ function Contact({ contact }) {
             <button type="submit" className="special-button">
               <span>Contact me</span>
             </button>
+            <input type="hidden" name="_next" value="https://www.google.com/" />
+            <input type="hidden" name="_captcha" value="false" />
           </form>
         </div>
       </div>

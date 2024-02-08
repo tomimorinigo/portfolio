@@ -39,10 +39,32 @@
   text-decoration: none;
   color: #fff;
   transition: color 300ms;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  padding: 3px 0;
+  position: relative;
 }
 
-.nav ul li a:hover {
+.nav ul li a:hover{
   color: #20a4f3;
+}
+
+.nav ul li a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #20a4f3;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .nav ul li button{

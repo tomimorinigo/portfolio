@@ -6,6 +6,7 @@ import AsideSocial from "./components/AsideSocial";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import { handleClickScroll, useScroll } from "./scripts/scroll";
 import { useIntersectionObserver } from "./scripts/useIntersectionObserver";
 
@@ -38,6 +39,8 @@ function App() {
       <SkillsSection skills={skillsRef} />
 
       <Contact contact={contactRef} />
+
+      <Footer />
     </>
   );
 }

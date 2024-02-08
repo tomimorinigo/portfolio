@@ -131,16 +131,49 @@
   --quaternary-color: #13608d;
   --background-color: #011e48;
   --text-color: #ddd;
+
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter, sans-serif;
 }
 
 #root {
   width: 100%;
   height: 200vh;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('font/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('font/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* SCROLL */
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 5px;
 }

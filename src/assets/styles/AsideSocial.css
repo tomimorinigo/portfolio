@@ -3,7 +3,7 @@
 .aside-social {
   position: fixed;
   bottom: 0;
-  left: 5%;
+  left: 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@
 .no-show-aside{
   position: fixed;
   bottom: 0;
-  left: 5%;
+  left: 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,8 +45,8 @@
 
 
 .social-icon{
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background-color: #fff;
   margin: 10px 15px;
   border-radius: 50%;
@@ -61,7 +61,7 @@
 
 .social-icon img {
   position: relative;
-  width: 29px;
+  width: 28px;
   transition: 0.5s;
   z-index: 3;
 }
