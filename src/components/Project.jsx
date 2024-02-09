@@ -6,7 +6,7 @@ function Project({title, description, technologies, image, link, githubLink, dir
     return(
         <div className={`project-container ${direction === 'right' ? 'right-direction' : 'left-direction'}`}>
             <div className='side-content'>
-                <h2>{title}</h2>
+                <h2 className='text-hover'>{title}</h2>
                 <p>{description}</p>
                 <div className='technologies-list'>
                     {technologies.map((tech, index) => <span className='technologie' key={index}>{tech}</span>)}
@@ -20,7 +20,8 @@ function Project({title, description, technologies, image, link, githubLink, dir
                     </a>
                 </div>
             </div>
-            <div className='image-wrapper'>
+            <div className='img-wrapper-project'>
+                <div className='filter-projects'></div>
                 <img src={image} alt="Project image" />
             </div>
         </div>

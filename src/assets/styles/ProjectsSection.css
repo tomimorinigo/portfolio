@@ -12,3 +12,20 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 1200px){
+    .projects{
+        width: 75%;
+    }
+}
+
+@media (max-width: 550px){
+    .projects{
+        width: 85%;
+    }
+
+    .projects-content{
+        padding: 0;
+    }
+}
+

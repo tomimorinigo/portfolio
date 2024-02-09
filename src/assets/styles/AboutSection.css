@@ -58,6 +58,7 @@
   width: 350px;
   height: auto;
   border-radius: 10px;
+  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
 }
 
 .img-wrapper:hover img {
