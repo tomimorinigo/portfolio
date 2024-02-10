@@ -2,6 +2,7 @@
 
 .main {
   width: 100%;
+  margin-top: 85px;
   height: 95vh;
   background-color: #011e48;
   background-image: radial-gradient(

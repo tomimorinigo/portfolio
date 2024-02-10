@@ -1,6 +1,6 @@
 /* ------ HEADER ------ */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
@@ -77,18 +77,12 @@
   display: none;
 }
 
-.menu.open {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background: #011e48;
+.menu-toggle {
+  display: none;
 }
 
-.menu-toggle {
-  display: none; /* Esto es solo para pantallas pequeñas */
+.menu-toggle img {
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -101,22 +95,51 @@
   .menu-toggle {
     background: transparent;
     border: none;
-    display: block; /* Mostrar el botón de menú en pantallas pequeñas */
+    display: block;
   }
 
   .menu-toggle img {
     width: 30px;
     filter: invert(1);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
 
-  .nav ul {
-    display: none; /* Ocultar el menú en pantallas pequeñas */
+  .menu-toggle.open img {
+    transform: rotate(180deg);
   }
 
-  .menu.open {
+
+  #menu{
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
-    position: static;
-    background: transparent;
+    position: fixed;
+    top: 87px;
+    right: 0;
+    width: 100%;
+    background-color: #062857;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    padding: 40px 0 0 10px;
+    transform: translateX(150%);
+    transition: 0.5s ease-in-out;
+  }
+
+  #menu.open {
+    transform: translateX(0);
+    transition: 0.3s ease-in-out;
+  }
+
+  #menu li{
+    margin-bottom: 25px;
+  }
+
+  #menu li a{
+    font-size: 24px;
+  }
+
+  #menu li button{
+    font-size: 24px;
   }
 }

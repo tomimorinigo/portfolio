@@ -26,16 +26,16 @@ const scrollToRef = (ref) => {
   if (element) {
     const rect = element.getBoundingClientRect();
     const offset = window.scrollY || document.documentElement.scrollTop;
-    const centerOffset = window.innerHeight / 2 - rect.height / 2;
 
     window.scrollTo({
-      top: rect.top + offset - centerOffset,
+      top: rect.top + offset - 50,
       behavior: 'smooth',
     });
   }
 };
 
-export const handleClickScroll = (ref) => (e) => {
+export const handleClickScroll = (ref,e) => {
   e.preventDefault();
+  console.log('ref', ref);
   scrollToRef(ref);
 };

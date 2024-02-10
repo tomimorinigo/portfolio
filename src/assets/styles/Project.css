@@ -176,8 +176,12 @@
     
   }
 
-  .side-content h2{
-    color: var(--secondary-color) !important;
+  .side-content .text-hover{
+    color: var(--secondary-color);
+  }
+
+  .side-content .text-hover:hover{
+    color: var(--text-color);
   }
 
   .side-content p{
