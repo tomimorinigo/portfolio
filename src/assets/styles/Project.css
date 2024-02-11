@@ -127,7 +127,6 @@
 
 .img-wrapper-project {
   position: relative;
-  margin-left: 30px;
 }
 
 .img-wrapper-project:hover .filter-projects {
@@ -267,5 +266,29 @@
 
   .side-content p{
     font-size: 15px;
+  }
+}
+
+@media (max-width: 400px){
+  .side-content h2{
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .side-content p{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .technologies-list{
+    margin-top: 0;
+  }
+
+  .technologie{
+    margin-top:0px;
+  }
+
+  .links{
+    margin-top: 5px;
   }
 }
