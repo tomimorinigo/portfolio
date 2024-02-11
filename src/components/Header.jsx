@@ -32,7 +32,7 @@ function Header({ handleClick, scrolling, main, about, skills, projects , contac
       <div className="logo">
         <a href="#" onClick={(e) => handleClickMenu(main, e)}>
 
-          <img src="/me/logo-3.png" alt="Tomas Morinigo logo" />
+          <img src="/me/logo-2.png" alt="Tomas Morinigo logo" />
         </a>
       </div>
       <div className="nav">
