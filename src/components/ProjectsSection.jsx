@@ -12,12 +12,21 @@ function ProjectsSection({project}) {
       <div className="projects-content" >
         
         <Project
+          title={"Invest Argentina"}
+          description={"Full Stack Web application made for a client. The Backend was implemented with Spring, JWT and Security. The Frontend was created with ReactJs."}
+          image={"/projects/invest-ar.jpg"}
+          technologies={["Spring", "React", "JWT", "Security"]}
+          link={"https://invest-ar.vercel.app/"}
+          githubLink={"https://github.com/tomimorinigo/invest-ar"}
+          direction={"left"}
+        />
+        <Project
           title={"CRUD JWT Spring"}
           description={"CRUD of products and clients carried out in Spring boot and React. With session management and authentication using JWT and Spring Security"}
           image={"/projects/crud-jwt-spring.jpg"}
           technologies={["Spring", "React", "JWT", "Security"]}
           githubLink={"https://github.com/tomimorinigo/google-clon"}
-          direction={"left"}
+          direction={"right"}
         />
         <Project
           title={"Google Clon"}
@@ -25,7 +34,7 @@ function ProjectsSection({project}) {
           image={"/projects/google-clon.jpg"}
           technologies={["Spring", "Java", "Hibernate", "Spiders"]}
           githubLink={"https://github.com/tomimorinigo/google-clon"}
-          direction={"right"}
+          direction={"left"}
         />
         <Project
           title={"Movie search"}
@@ -34,7 +43,7 @@ function ProjectsSection({project}) {
           technologies={["React", "CSS", "JSX", "HTML"]}
           link={"https://movies-searcher-tomas.netlify.app/"}
           githubLink={"https://github.com/tomimorinigo/mini-projects-react/tree/main/projects/05-movie-search"}
-          direction={"left"}
+          direction={"right"}
         />
         <Project
           title={"NBU calculator"}
@@ -42,7 +51,7 @@ function ProjectsSection({project}) {
           image={"/projects/nbu-calculator.jpg"}
           technologies={["Electron", "JS", "NodeJs", "CSS"]}
           githubLink={"https://github.com/tomimorinigo/nbu-calculator"}
-          direction={"right"}
+          direction={"left"}
         />
       </div>
     </section>

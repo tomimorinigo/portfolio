@@ -127,6 +127,8 @@
 
 .img-wrapper-project {
   position: relative;
+  width: 450px;
+  height: 300px;
 }
 
 .img-wrapper-project:hover .filter-projects {
@@ -134,10 +136,13 @@
 }
 
 .img-wrapper-project img {
-  display: block;
-  width: 400px;
+
   transition: all 0.3s ease-in-out;
   border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
 }
 
 .filter-projects {
