@@ -16,8 +16,7 @@ function ProjectsSection({project}) {
           description={"Full Stack Web application made for a client. The Backend was implemented with Spring, JWT and Security. The Frontend was created with ReactJs."}
           image={"/projects/invest-ar.jpg"}
           technologies={["Spring", "React", "JWT", "Security"]}
-          link={"https://invest-ar.vercel.app/"}
-          githubLink={"https://github.com/tomimorinigo/invest-ar"}
+          link={"https://investarg.com.ar/"}
           direction={"left"}
         />
         <Project

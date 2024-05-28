@@ -36,9 +36,13 @@ function Project({
             </a>
           )}
 
-          <a href={githubLink} target="_blank" rel="noreferrer">
-            <img src="/media/github.png" alt="Project Repository" />
-          </a>
+          {githubLink === undefined ? (
+            <></>
+          ) : (
+            <a href={githubLink} target="_blank" rel="noreferrer">
+              <img src="/media/github.png" alt="Project Repository" />
+            </a>
+          )}
         </div>
       </div>
       <div className="img-wrapper-project">
